@@ -1,0 +1,211 @@
+
+:root {
+    --main-color: #ffc107;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Kumbh+Sans:wght@300;400;500;700&family=Montserrat:wght@100&family=Open+Sans:wght@300;400;600;700&family=Rubik:ital,wght@0,700;1,800&family=Yanone+Kaffeesatz:wght@300;500;600;700&display=swap');
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 10px;
+    background-color: var(--main-color);
+    border-radius: 8px;
+    align-items: center;
+    margin-top: 30px !important;
+}
+body {
+    background-color: #E5E5E5 !important;
+}
+
+/* Teams Items Section */
+.teams{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.teams .team-item {
+    background-color: var(--main-color);
+    text-align: center;
+    border-radius: 10px;
+    height: 285px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: -1px 0px 20px #00000036;
+}
+.teams .team-item:hover {
+    transform: scale(1.03);
+}
+.teams .team-item img {
+    width: 75px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+.teams .team-item h3 {
+    margin: 10px 0;
+    font-size: 19px;
+    color: #3a3a3a;
+}
+.teams .team-item {
+    margin: 0;
+    font-size: 13px;
+}
+.nav-content button {
+    font-size: 13px;
+    font-weight: 600;
+}
+.nav-content h3 {
+    margin: 0;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 6px;
+    color: #3a3a3a;
+}
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    background-color: #ffff;
+    border-radius: 7px;
+    padding: 0px !important;
+}
+.results-container .result-item {
+    flex: 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #dddd;
+    padding: 10px 0;
+}
+.results-container .result-item img {
+    width: 32px;
+    display: block;
+    margin-bottom: 8px;
+}
+.results-container .results-info {
+    height: 85px;
+    display: flex;
+    width: 100%;
+    align-items: end;
+    justify-content: space-around;
+    background-color: var(--main-color);
+}
+.results-info p {
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 25%;
+    text-align: center;
+    height: 40px;
+    margin: 0;
+    line-height: 40px;
+}
+.results-info p.active {
+    background-color: #e2aa00;
+}
+.results-info p:hover{
+    background-color: #e2aa00;
+}
+.teams-names, 
+.teams-logos, 
+.teams-results {
+    width: 30%;
+}
+.teams-names p {
+    font-size: 13px;
+}
+/* Players Page */
+/* Players Page */
+/* Players Page */
+.players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.players .player-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    margin: auto;
+}
+.players .player-img {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    position: relative;
+}
+.players .player {
+    background-color: var(--main-color);
+    width: 140px;
+    margin: 20px auto;
+    text-align: center;
+    height: 140px;
+    border-radius: 17%;
+    padding: 15px;
+    box-shadow: -1px 0px 20px #00000036;
+}
+.players .player h4 {
+    font-size: 17px;
+    margin: 7px auto 0 0;
+    font-family: fantasy;
+    font-weight: 800;
+}
+
+.players .player p {
+    font-size: 28px;
+    margin: 0;
+    font-family: cursive;
+    position: absolute;
+    top: 50%;
+    left: -6px;
+}
+/* login page */
+/* login page */
+/* login page */
+.login {
+    width: 500px !important;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 80px !important;
+}
+.login h4 {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.l-btn {
+    display: block;
+    margin: auto;
+    width: 200px;
+    margin: 30px auto;
+    background-color: var(--main-color);
+    border: none;
+    padding: 3px;
+    border-radius: 6px;
+}
+.section {
+    height: 100vh;
+    padding: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    transform: translatex(100%);
+    opacity: 0;
+    transition: all 0.4s ease;
+    background-color: #E5E5E5 !important;
+}
+.section.active {
+    z-index: 22;
+    opacity: 1;
+    transform: translateX(0);
+}
